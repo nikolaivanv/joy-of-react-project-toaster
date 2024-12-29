@@ -4,7 +4,7 @@ const useEscapeKey = (callback) => {
   React.useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.code === "Escape") {
-        callback();
+        callback(event);
       }
     };
     document.addEventListener("keydown", handleKeyDown);
